@@ -8,8 +8,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ActivityModule" />
+            <option value="$PROJECT_DIR$/App" />
             <option value="$PROJECT_DIR$/BaseModule" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/CircleModule" />
+            <option value="$PROJECT_DIR$/HomeModule" />
+            <option value="$PROJECT_DIR$/LinkmanModule" />
+            <option value="$PROJECT_DIR$/PhotoModule" />
+            <option value="$PROJECT_DIR$/ToolModule" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

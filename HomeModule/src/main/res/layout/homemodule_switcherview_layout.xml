@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="#53A1A1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/lxr"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_linkman"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/hd"
+                android:layout_gravity="center"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_activity"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/zxj"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_circle"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/pyq"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_photo"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+        <ImageView
+            android:layout_margin="10dp"
+            android:src="@drawable/yj2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_middle"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
