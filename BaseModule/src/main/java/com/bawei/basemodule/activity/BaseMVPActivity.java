@@ -14,6 +14,7 @@ public abstract class BaseMVPActivity extends BaseActivity{
         setContentView(getLayoutView());
         initView();
         initData();
+        click();
     }
 
     /**
@@ -30,4 +31,9 @@ public abstract class BaseMVPActivity extends BaseActivity{
      * 加载数据方法
      * */
     public abstract void initData();
+
+    /**
+     * 点击事件处理方法
+     * */
+    public abstract void click();
 }

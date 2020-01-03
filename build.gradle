@@ -2,18 +2,28 @@
 
 buildscript {
     ext{
-        rxlifecycle_version='2.1.0'
-        okhttp_version='3.11.0'
         logging_interceptor_version='3.11.0'
-        gson_version='2.8.5'
-        rxjava_version='2.2.3'
-        rxandroid_version='2.1.0'
-        retrofit_version='2.4.0'
         converter_gson_version='2.4.0'
-        adapter_rxjava2_version='2.4.0'
-        map3d_version='7.1.0_3dmap7.1.0'
-        autodispose_version='1.0.0-RC3'
+        rxandroid_version='2.1.0'
         cardview_version='28.0.0'
+        retrofit_version='2.4.0'
+        arouter_version='1.5.0'
+        okhttp_version='3.11.0'
+        recyclerview_version='28.0.0'
+        rxlifecycle_version='2.1.0'
+        baseRecyclerAdapter_version='2.9.42'
+        design_version='28.0.0'
+        avatar_version='1.0.4'
+        arouter_compiler_version='1.2.2'
+        map3d_version='7.1.0_3dmap7.1.0'
+        adapter_rxjava2_version='2.4.0'
+        autodispose_version='1.0.0-RC3'
+        rxjava_version='2.2.3'
+        glide_version='4.6.1'
+        gson_version='2.8.5'
+        eventbus_version='3.1.1'
+        zxing_version='2.2'
+        timelineview_version='2.3.0'
     }
 
     repositories {
@@ -33,7 +43,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven { url 'https://jitpack.io'}
     }
 }
 

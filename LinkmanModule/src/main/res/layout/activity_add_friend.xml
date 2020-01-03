@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.activity.AddFriendActivity"
+    android:orientation="vertical">
+
+    <com.bawei.basemodule.widget.StatusBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/holo_blue_light"/>
+
+    <com.bawei.basemodule.widget.CustomTitleBar
+        android:background="@color/holo_blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:leftSrc="@drawable/return_home"
+        app:titlebarName="@string/add"
+        android:id="@+id/linkman_custom"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:background="@color/holo_blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_friend_tab"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/add_friend_viewpager"/>
+
+</LinearLayout>

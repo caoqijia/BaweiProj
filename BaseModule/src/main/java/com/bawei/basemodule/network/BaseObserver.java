@@ -10,7 +10,7 @@ public class BaseObserver<T> implements Observer<T> {
     }
 
     @Override
-    public void onNext(Object o) {
+    public void onNext(T t) {
 
     }
 

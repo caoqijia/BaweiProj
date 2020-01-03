@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LinkmanModule</string>
+    <string name="linkman">联系人</string>
+    <string name="add">添加</string>
+    <string name="phone_linkman">手机联系人</string>
+</resources>

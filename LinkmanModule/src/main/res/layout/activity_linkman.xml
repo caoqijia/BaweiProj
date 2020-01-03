@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.activity.LinkmanActivity"
+    android:orientation="vertical">
+
+    <com.bawei.basemodule.widget.StatusBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/holo_blue_light"/>
+
+    <com.bawei.basemodule.widget.CustomTitleBar
+        android:background="@color/holo_blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:rightTypeText="false"
+        app:leftSrc="@drawable/return_home"
+        app:rightSrc="@drawable/addfriend"
+        app:titlebarName="@string/linkman"
+        android:id="@+id/linkman_custom"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_add_friend"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:background="@color/holo_blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linkman_tab"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linkman_viewpager"/>
+
+</LinearLayout>

@@ -1,2 +1,2 @@
-include ':App', ':BaseModule', ':HomeModule', ':ToolModule', ':LinkmanModule', ':ActivityModule', ':CircleModule', ':PhotoModule'
+include ':UserCenter', ':BaseModule', ':HomeModule', ':LinkmanModule', ':ActivityModule', ':CircleModule', ':PhotoModule', ':CommonLibrary', ':XmppLibrary', ':App'
 rootProject.name='BaweiProj'

@@ -1,20 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mvp.view.activity.HomeActivity">
+    tools:context=".mvp.view.activity.HomeActivity"
+    android:id="@+id/drawer">
 
-    <com.amap.api.maps.MapView
+    <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.amap.api.maps.MapView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/homemodule_mv_map"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.bawei.basemodule.widget.StatusBarView
+                android:background="@color/translucent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.bawei.basemodule.widget.MapTitleBar
+                android:background="@color/translucent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/home_custom_titleBar"/>
+        </LinearLayout>
+
+        <com.bawei.homemodule.widget.SwitcherView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/homemodule_sv_Switcher"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/translucent_white"
+        android:layout_width="300dp"
         android:layout_height="match_parent"
-        android:id="@+id/homemodule_mv_map"/>
+        android:layout_gravity="left"
+        android:orientation="vertical">
 
-    <com.bawei.homemodule.widget.SwitcherView
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/homemodule_sv_Switcher"/>
+        <RelativeLayout
+            android:background="@color/translucent_darkgreen"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
 
-</RelativeLayout>
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_action_close"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/iv_close"/>
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/iv_head_portrait"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="职业大坑"
+                    android:id="@+id/tv_name"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="一小段自我介绍"
+                    android:id="@+id/tv_introduce"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
